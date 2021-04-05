@@ -8,41 +8,41 @@ By reading the above heading the first question which comes to our mind is –
 - It promotes reusability which leads to robust and maintainable code.
 - It makes our code easy to understand and can be easily debugged.
 
--
+
 # Types of Design Pattern in Java :
 
 ![image](https://user-images.githubusercontent.com/76866301/113558718-ccda2b00-961d-11eb-9379-edd5938cd4bf.png)
 
 
--
+
 # Creational Design Pattern :
 
 - Creational Design Patterns allows us to create the object in best possible way.
 
 ![image](https://user-images.githubusercontent.com/76866301/113558766-e1b6be80-961d-11eb-8fc7-de7924ecbf38.png)
 
--
+
 # Structural Design Pattern :
 
 - Structural design pattern describes how objects and classes can be combined to form the largest structure.
 
 ![image](https://user-images.githubusercontent.com/76866301/113558816-f6935200-961d-11eb-9d71-63c4bafceb0b.png)
 
--
+
 # Behavioral Design Pattern :
 
 - Behavioral Design Pattern describes how one class communicate with other class in a loose couple manner.
 
 ![image](https://user-images.githubusercontent.com/76866301/113558853-07dc5e80-961e-11eb-84b1-8020196ba32c.png)
 
--
+
 # Singleton Design Pattern :
 
 - It allows us to create only one instance of the class.
 - We must make sure that singleton class must provide the global access point to get the instance
 - i.e. we must have at least one public method in a class which returns instance of a class.
 
--
+
 # Different approaches to implement singleton design pattern :
 
 - Eager initialization
@@ -56,14 +56,14 @@ By reading the above heading the first question which comes to our mind is –
 - Using serialization destroy/prevent singleton
 - Example of singleton within JDK
 
--
+
 # Steps to create Singleton Pattern :
 
 1. Always create your constructor private so that multiple objects cannot be created from other classes.
 2. Create private static variable so that it is the only instance of the class.
 3. Create public static method to return the instance of a class and it remains the global access for the instance of the singleton class.
 
--
+
 # Eager initialization :
 
 - In eager initialization the instance/object of the class is created at the time of class loading.
@@ -124,7 +124,7 @@ System._ **out** _.println(obj2.hashCode());
 
 - The above output show that the unique code for both the objects are same that means the object is created only once and is shared while calling the method.
 
--
+
 # Static Block Initialization :
 
 - In static block initialization we need to create one static block and inside that block we give memory to the instance of a class.
@@ -210,7 +210,7 @@ System._ **out** _.println(obj2.hashCode());
 
 - The above output show that the unique code for both the objects are same that means the object is created only once and is shared while calling the method.
 
--
+
 # Lazy Initialization :
 
 - In lazy initialization the instance is given memory inside the getinstance method.
@@ -253,7 +253,7 @@ _instance_ = **new** Singleton();
 
 Step 2 and output will be same as that of the above 2 approaches.
 
--
+
 # **Thread Safe Singleton :**
 
 - Always used for multithreaded environment.
@@ -395,7 +395,7 @@ _instance_ = **new** Singleton();
 
 ![image](https://user-images.githubusercontent.com/76866301/113559023-4eca5400-961e-11eb-820f-b13b4072ed27.png)
 
--
+
 # Bill pugh singleton implementation :
 
 - To prevent the issue of memory modelling in java bill pugh is used.
@@ -460,7 +460,7 @@ System._ **out** _.println(obj2.hashCode());
 
 ![image](https://user-images.githubusercontent.com/76866301/113559079-66094180-961e-11eb-895e-0f4013abcfd2.png)
 
--
+
 # **Using Reflection to destroy singleton pattern :**
 
 - Using reflection we can break singleton pattern created by above all the approaches.
@@ -546,7 +546,7 @@ System._ **out** _.println(obj2.hashCode());
 
 ![image](https://user-images.githubusercontent.com/76866301/113559120-73bec700-961e-11eb-8590-6d399953820d.png)
 
--
+
 # **Singleton using enum :**
 
 - Using enum we can avoid breakage of singleton using reflection .
@@ -603,7 +603,7 @@ System._ **out** _.println(obj1.printMessage());
 
 ![image](https://user-images.githubusercontent.com/76866301/113559146-820ce300-961e-11eb-9374-0dee2d01be74.png)
 
--
+
 # **How to prevent cloning to break a Singleton Class Pattern :**
 
 - While creating a clone there is the chance of breakage of singleton pattern .
@@ -685,7 +685,7 @@ System._ **out** _.println(obj2.hashCode());
 
 ![image](https://user-images.githubusercontent.com/76866301/113559190-9224c280-961e-11eb-8ecd-a21eb7d3164b.png)
 
--
+
 # **Examples of Singleton Design Pattern in JDK :**
 
 # **1). Runtime class**
